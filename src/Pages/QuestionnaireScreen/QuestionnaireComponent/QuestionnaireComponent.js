@@ -4,7 +4,7 @@ import './QuestionnaireComponent.scss';
 class QuestionnaireComponent extends Component {
   render() {
     return (
-      <div className="Home">
+      <div className="Questionnaire">
         
       </div>
     );

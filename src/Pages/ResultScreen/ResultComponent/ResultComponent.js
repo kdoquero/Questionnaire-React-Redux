@@ -4,7 +4,7 @@ import './ResultComponent.scss';
 class ResultComponent extends Component {
   render() {
     return (
-      <div className="Home">
+      <div className="Result">
         
       </div>
     );
