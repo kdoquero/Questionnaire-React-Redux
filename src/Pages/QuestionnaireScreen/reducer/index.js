@@ -12,13 +12,11 @@ export const questionnaireReducer = (state=INITIAL_STATE,action)=> {
             return {
                 ...state
             }
-            break;
-
         default:
             return {
                 state
             }
-            break;
+          
     }
 }
 
