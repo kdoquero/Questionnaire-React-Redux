@@ -1,0 +1,10 @@
+.Group {
+    display: flex;
+    flex-direction: row;
+}
+.Choice {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
