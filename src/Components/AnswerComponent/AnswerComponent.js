@@ -19,7 +19,7 @@ class AnswerComponent extends Component {
   }
   renderAnswers() {
     let answers = this.props.answers;
-    console.log(answers);
+    //console.log(answers);
     
     let renderedAnswers = [];
     for (let index = 0; index < answers.length; index++) {

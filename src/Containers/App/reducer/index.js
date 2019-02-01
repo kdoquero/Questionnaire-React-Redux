@@ -6,7 +6,7 @@ const INITIAL_STATE = {
 }
 
 export const screenReducer = (state = INITIAL_STATE, action) => {
-    console.log(state, action, "screenReducer");
+    //console.log(state, action, "screenReducer");
     switch (action.type) {
         case types.CHANGE_SCREEN:
             

@@ -5,12 +5,22 @@ import ChoiceComponent from "../ChoiceScreen/ChoiceComponent"
 import QuestionnaireContainer from '../QuestionnaireScreen/QuestionnaireContainer';
 import ResultComponent from "../ResultScreen/ResultComponent"
 import * as pageName from "../../constants"
+
+/**
+ * Premier component de notre application
+ * @class React Component
+ */
 class App extends Component {
+  /**
+   * affiche l'appplication
+   * le switch retourne le bon componant en function de la page souhaité
+   */
   render() {
-    console.log('AppComponent', this.props);
+    //console.log('AppComponent', this.props);
     return (
       <div className="App">
       {(() => {
+        
         switch(this.props.screen) {
           case pageName.HOME_PAGE:
             return <HomeContainer changeScreen={this.props.changeScreen}/>;

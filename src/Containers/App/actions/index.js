@@ -1,5 +1,9 @@
 import * as types from '../../../constants'
-
+/**
+ * Change la page du projet, recoit en argument:
+ * @param {string} pageName définit dans les constantes ,une page;
+ * @param {number} index si besoin récupère l'index du questionnaire au changement de page defaut à 0
+ */
 export const changeScreen = (pageName,index =0) => {
    return {
        type: types.CHANGE_SCREEN,
@@ -7,18 +11,31 @@ export const changeScreen = (pageName,index =0) => {
         indexQuestionnaire: index
     }
  }
+ /**
+  * Met à jour les questions dans le store;
+  * @param {Array[Object]} questions 
+  */
  export const updateQuestions = (questions)=> {
     return {
         type:types.UPDATE_QUESTION,
         questions :questions
     }
 }
+/**
+ * pas implémenté
+ * @param {*} questions 
+ */
 export const updateTheme = (questions)=> {
     return {
         type:types.UPDATE_QUESTION,
         questions :questions
     }
 }
+/**
+ * Fetch les données du questionnaire dans l'api, en fonction du parametre thème
+ * exemple de theme : "html,js,php,ruby"
+ * @param {string} theme 
+ */
  export const fetchApi = (theme) => {
     return async (dispatch) => {
         try {

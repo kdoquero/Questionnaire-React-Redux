@@ -4,7 +4,7 @@ import  {changeScreen,fetchApi }    from './actions';
 import App from './App'
 
 const mapStateToProps = state => {
-    console.log(state,"AppContainer Props");
+    //console.log(state,"AppContainer Props");
     
   return  {screen: state.screenReducer.screen,
         email:state.userReducer.email,

@@ -46,13 +46,14 @@ class QuestionnaireComponent extends Component {
 
   renderQuestionnaire = () => {
     const currentQuestion = this.getCurrentQuestion(this.props.currentQuestion)
-    console.log(currentQuestion);
     if (currentQuestion){
       return (<div >
         <QuestionComponent question={currentQuestion.question} />
         <AnswerComponent checkCorrect={this.checkCorrect} answers={currentQuestion.answers} />
       </div>);
     } else {
+      this.props.updateCurrentQuestion(0);
+      this.props.updateCurrentScore(0);
       this.props.changeScreen(pageName.RESULT_PAGE)
     }
     
