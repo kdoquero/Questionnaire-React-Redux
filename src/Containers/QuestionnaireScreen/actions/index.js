@@ -12,6 +12,12 @@ export const updateCurrentQuestion = (currentIndex)=> {
         currentQuestion :currentIndex
     }
 }
+export const updateCurrentScore = (score)=> {
+    return {
+        type:types.UPDATE_CURRENT_SCORE,
+        score :score
+    }
+}
 export const updateTheme = (theme) => {
     return {
         type:types.UPDATE_THEME,

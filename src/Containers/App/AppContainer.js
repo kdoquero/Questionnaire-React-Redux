@@ -7,7 +7,8 @@ const mapStateToProps = state => {
     console.log(state,"AppContainer Props");
     
   return  {screen: state.screenReducer.screen,
-        email:state.userReducer.email
+        email:state.userReducer.email,
+        score:state.questionnaireReducer.score
     }
   };
   const mapDispatchToProps = dispatch => {

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ButtonComponent from "../../Components/ButtonComponent/ButtonComponent";
 import * as PageName from "../../constants"
+import "./FormComponent.scss"
 class FormComponent extends Component {
   constructor(props) {
     super(props);
@@ -13,8 +14,8 @@ class FormComponent extends Component {
     return (
       <div className="Form">
         <form>
-          <label>EMAIL: </label>
-          <input type="email" placeholder="myEmail@mail.com" onChange={evt => this.getEmail(evt)}></input>
+          <label className="">EMAIL: </label>
+          <input className="" type="email" placeholder="myEmail@mail.com" onChange={evt => this.getEmail(evt)}></input>
         
             <ButtonComponent clickButton={this.goToChoices} disabledB={this.state.disabledB} email={this.state.email} boutonValue="SEND" />
         </form>

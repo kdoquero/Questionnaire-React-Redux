@@ -28,7 +28,7 @@ export const updateTheme = (questions)=> {
             //let questions = [html,js,php]
             dispatch(updateQuestions(questions))
             dispatch(changeScreen(types.QUESTIONNAIRE_PAGE))
-            console.log(questions, "questions");
+            //console.log(questions, "questions");
             
         } catch (e) {
             console.log(e);

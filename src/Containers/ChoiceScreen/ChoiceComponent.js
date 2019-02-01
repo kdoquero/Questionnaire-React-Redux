@@ -6,9 +6,9 @@ class ChoiceComponent extends Component {
   render() {
     return (
       <div className="Choice">
-        <h1>Welcome {this.props.email} here your choices:</h1>
+        <h1>{this.props.email}, here your choices:</h1>
         <div className="Group">
-          {this.createItemGroup(3)}
+          {this.createItemGroup(constants.LANGUAGES.length)}
         </div>
       </div>
 
